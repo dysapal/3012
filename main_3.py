@@ -33,5 +33,8 @@ async def multiplied(ctx, left: int, right: int):
 async def divided(ctx, left: int, right: int):
     """Adds two numbers together."""
     await ctx.send(left / right)
-
+@bot.command()
+async def powered(ctx, left: int, right: int):
+    """Adds two numbers together."""
+    await ctx.send(left ** right)
 bot.run("tu token")
